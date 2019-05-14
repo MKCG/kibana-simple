@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+
+  "name": "Kibana simplified",
+  "description": "Simplify Kibana interface",
+
+  "version": "1",
+
+  "content_scripts": [{
+      "matches": ["*://*/*"],
+      "js":      ["content.js"]
+  }],
+
+  "permissions": ["activeTab"],
+  
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
